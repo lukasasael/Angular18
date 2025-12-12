@@ -230,7 +230,9 @@
       <button (click)="increment()">Click me!</button>
       <app-meu-input></app-meu-input>
       <app-meu-signal></app-meu-signal>
+      <app-binding></app-binding>
     </div>
+    <app-comunication (aumentou)="onAumentou($event)" (diminuiu)="onDiminuiu($event)"></app-comunication>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
       <div class="pill-group">
