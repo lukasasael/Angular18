@@ -1,0 +1,31 @@
+<div>
+  @for (nome of nomes; let i = $index; track $index) {
+    @if (firstLetterA(nome)) {
+        <p>{{ nome }}</p>
+    }
+  }
+  <button [ngClass]="isAtivo ? 'verde' : 'vermelho'">
+  Verde/Vermelho
+  </button>
+
+  <button [class.verde]="isAtivo">...</button>
+  <button [class.vermelho]="isAtivo">...</button>
+
+  <button (click)="mudarCor()">Mudar</button>
+
+  @switch (status) {
+
+    @case ('erro') {
+        <p>Erro ao Carregar</p>
+    }
+    @case ('carregando') {
+        <p>Carregando...</p>
+    }
+    @default {
+        <p>OK!</p>
+    }
+  }
+
+  <button [class.ativo]="..." [class.outra]="...">Botão</button>
+
+</div>

@@ -7,6 +7,7 @@ import { MeuInputComponent } from './meu-input/meu-input.component';
 import { MeuSignalComponent } from './meu-signal/meu-signal.component';
 import { BindingComponent } from './binding/binding.component';
 import { ComunicationComponent } from './comunication/comunication.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ComunicationComponent } from './comunication/comunication.component';
     MeuInputComponent,
     MeuSignalComponent,
     BindingComponent,
-    ComunicationComponent
+    ComunicationComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
